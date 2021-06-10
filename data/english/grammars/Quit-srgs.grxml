@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="Quit" tag-format="semantics/1.0-literals" version="1.0" xml:lang="en-us">
+    <rule id="Quit" scope="public">
+        <ruleref uri="#Column1"/>
+    </rule>
+    <rule id="Column1" scope="private">
+        <one-of>
+            <item>quit<tag>quit</tag>
+            </item>
+            <item>stop<tag>stop</tag>
+            </item>
+            <item>cancel<tag>cancel</tag>
+            </item>
+            <item>goodbye<tag>goodbye</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

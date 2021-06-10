@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PromptDoc>
+    <Prompt audioonly="false" bargeintype="speech" order="standard" version="1.0">
+        <PromptLevel count="1" valid="true">
+            <Properties>
+                <Property name="TimeUnit" value="seconds"/>
+                <Property name="Timeout_Presentation" value="constant"/>
+                <Property name="Timeout" value="8"/>
+                <Property name="BargeIn" value="true"/>
+            </Properties>
+            <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.IfStatement" type="If">
+                    <Properties>
+                        <Property name="LeftVar" value="Num3"/>
+                        <Property name="RightVar" value="WhatIs"/>
+                        <Property name="RightField" value="interpretation"/>
+                        <Property name="Valid" value="true"/>
+                        <Property name="Compare" value="NotEqualsIgnoreCase"/>
+                    </Properties>
+                    <ChildItems>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value="You said"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                            <Properties>
+                                <Property name="Name" value="WhatIs"/>
+                                <Property name="Format" value="text"/>
+                                <Property name="Field" value="interpretation"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value="The correct answer is "/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                            <Properties>
+                                <Property name="Name" value="Num3"/>
+                                <Property name="Format" value="text"/>
+                                <Property name="Valid" value="true"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.IfStatement" type="If">
+                            <Properties>
+                                <Property name="LeftVar" value="ModNum"/>
+                                <Property name="Value" value="0"/>
+                                <Property name="Compare" value="!="/>
+                            </Properties>
+                            <ChildItems>
+                                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                                    <Properties>
+                                        <Property name="Name" value="With a remainder of "/>
+                                    </Properties>
+                                    <ChildItems/>
+                                </Segment>
+                                <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                                    <Properties>
+                                        <Property name="Name" value="ModNum"/>
+                                        <Property name="Format" value="text"/>
+                                    </Properties>
+                                    <ChildItems/>
+                                </Segment>
+                            </ChildItems>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value="Would you like to try again?"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                    </ChildItems>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.ElseStatement" type="Else">
+                    <Properties/>
+                    <ChildItems>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.IfStatement" type="If">
+                            <Properties>
+                                <Property name="LeftVar" value="ModNum"/>
+                                <Property name="Value" value="0"/>
+                                <Property name="Compare" value="!="/>
+                            </Properties>
+                            <ChildItems>
+                                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                                    <Properties>
+                                        <Property name="Name" value="That is correct. With a remainder of "/>
+                                    </Properties>
+                                    <ChildItems/>
+                                </Segment>
+                                <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                                    <Properties>
+                                        <Property name="Name" value="ModNum"/>
+                                        <Property name="Format" value="text"/>
+                                    </Properties>
+                                    <ChildItems/>
+                                </Segment>
+                            </ChildItems>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.ElseStatement" type="Else">
+                            <Properties/>
+                            <ChildItems>
+                                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                                    <Properties>
+                                        <Property name="Name" value="Thats right!"/>
+                                    </Properties>
+                                    <ChildItems/>
+                                </Segment>
+                            </ChildItems>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value="Would you like to go again?"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                    </ChildItems>
+                </Segment>
+            </ChildItems>
+        </PromptLevel>
+    </Prompt>
+</PromptDoc>

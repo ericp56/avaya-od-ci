@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar>
+    <properties>
+        <mode value="voice"/>
+        <type value="static"/>
+    </properties>
+    <data>
+        <column id="Column1" width="150">
+            <item repeat="-1" repeat-prob="-1" tag="" value="start over" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="" value="begin again" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="" value="again" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="" value="start again" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="" value="over" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="" value="new quiz" weight="-1"/>
+        </column>
+    </data>
+</grammar>

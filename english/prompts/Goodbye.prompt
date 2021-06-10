@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PromptDoc>
+    <Prompt audioonly="false" bargeintype="speech" order="standard" version="1.0">
+        <PromptLevel count="1" valid="true">
+            <Properties>
+                <Property name="TimeUnit" value="seconds"/>
+                <Property name="Timeout_Presentation" value="constant"/>
+                <Property name="Timeout" value="8"/>
+                <Property name="BargeIn" value="true"/>
+            </Properties>
+            <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.IfStatement" type="If">
+                    <Properties>
+                        <Property name="LeftVar" value="TotalQuestions"/>
+                        <Property name="Value" value="0"/>
+                        <Property name="Valid" value="true"/>
+                        <Property name="Compare" value="&gt;"/>
+                    </Properties>
+                    <ChildItems>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value="You got "/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                            <Properties>
+                                <Property name="Name" value="CorrectAnswers"/>
+                                <Property name="Format" value="text"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value=" out of "/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                            <Properties>
+                                <Property name="Name" value="TotalQuestions"/>
+                                <Property name="Format" value="text"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value=" correct. Your score is "/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
+                            <Properties>
+                                <Property name="Name" value="Score"/>
+                                <Property name="Format" value="text"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                            <Properties>
+                                <Property name="Name" value=" percent!"/>
+                            </Properties>
+                            <ChildItems/>
+                        </Segment>
+                    </ChildItems>
+                </Segment>
+            </ChildItems>
+        </PromptLevel>
+    </Prompt>
+</PromptDoc>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="QuizChoices" version="1.0" xml:lang="en-us">
+    <rule id="QuizChoices" scope="public">
+        <ruleref uri="#Column1"/>
+        <tag>cxtag=Column1.atag;Column1=Column1.atag;</tag>
+    </rule>
+    <rule id="Column1" scope="private">
+        <tag>atag=''</tag>
+        <one-of>
+            <item>addition<tag>atag+='addition'</tag>
+            </item>
+            <item>subtraction<tag>atag+='subtraction'</tag>
+            </item>
+            <item>multiplication<tag>atag+='multiplication'</tag>
+            </item>
+            <item>division<tag>atag+='division'</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

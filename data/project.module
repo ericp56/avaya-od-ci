@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module category="" descriptorversion="1.0" entrypoint="MyMathQuiz/Start" forcesubdialogcall="false" frameworkversion="07.23.08.01" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" nature="" outputmultipart="false" paramasnamelist="false" provider="" submitmethod="" version="1.0.0" webname="MyMathQuiz">
+    <description/>
+    <language name="english" root="en-us"/>
+    <dependencies/>
+</module>

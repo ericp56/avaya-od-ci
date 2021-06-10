@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar>
+    <properties>
+        <mode value="dtmf"/>
+        <compatibility value="SRGS"/>
+        <type value="static"/>
+    </properties>
+    <data>
+        <options value=""/>
+        <builtintype value="number"/>
+    </data>
+</grammar>

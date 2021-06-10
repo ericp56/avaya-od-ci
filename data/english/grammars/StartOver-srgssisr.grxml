@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="StartOver" tag-format="semantics/1.0" version="1.0" xml:lang="en-us">
+    <rule id="StartOver" scope="public">
+        <ruleref uri="#Column1"/>
+        <tag>out.cxtag=rules.Column1;out.Column1=rules.Column1;</tag>
+    </rule>
+    <rule id="Column1" scope="private">
+        <tag>out='';</tag>
+        <one-of>
+            <item>start over<tag>out+="start over";</tag>
+            </item>
+            <item>begin again<tag>out+="begin again";</tag>
+            </item>
+            <item>again<tag>out+="again";</tag>
+            </item>
+            <item>start again<tag>out+="start again";</tag>
+            </item>
+            <item>over<tag>out+="over";</tag>
+            </item>
+            <item>new quiz<tag>out+="new quiz";</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

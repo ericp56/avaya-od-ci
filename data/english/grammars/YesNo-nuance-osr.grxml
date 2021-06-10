@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="YesNo" version="1.0" xml:lang="en-us">
+    <rule id="YesNo" scope="public">
+        <ruleref uri="#Column1"/>
+        <tag>cxtag=Column1.atag;Column1=Column1.atag;</tag>
+    </rule>
+    <rule id="Column1" scope="private">
+        <tag>atag=''</tag>
+        <one-of>
+            <item>yes<tag>atag+='yes'</tag>
+            </item>
+            <item>no<tag>atag+='no'</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

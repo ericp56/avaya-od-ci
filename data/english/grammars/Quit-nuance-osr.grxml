@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="Quit" version="1.0" xml:lang="en-us">
+    <rule id="Quit" scope="public">
+        <ruleref uri="#Column1"/>
+        <tag>cxtag=Column1.atag;Column1=Column1.atag;</tag>
+    </rule>
+    <rule id="Column1" scope="private">
+        <tag>atag=''</tag>
+        <one-of>
+            <item>quit<tag>atag+='quit'</tag>
+            </item>
+            <item>stop<tag>atag+='stop'</tag>
+            </item>
+            <item>cancel<tag>atag+='cancel'</tag>
+            </item>
+            <item>goodbye<tag>atag+='goodbye'</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

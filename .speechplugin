@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<propertystore id="sage" version="1.0">
+    <propertymap/>
+    <nestedpropertystore>
+        <propertystore id="general" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="project" version="1.0">
+                    <propertymap>
+                        <property name="iconlg" value="icons/defaultapplicationlg.gif" version="1.0"/>
+                        <property name="mode" value="Speech/DTMF" version="1.0"/>
+                        <property name="logpropertiesupdated" value="3.0.17x2" version="1.0"/>
+                        <property name="iconsm" value="icons/defaultapplicationsm.gif" version="1.0"/>
+                        <property name="dtmfVarsEnabled" value="false" version="1.0"/>
+                        <property name="type" value="Application" version="1.0"/>
+                        <property name="version" value="1.0.0" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="ide" version="1.0">
+                    <propertymap>
+                        <property name="version" value="417" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="grammars" version="1.0">
+            <propertymap>
+                <property name="caching" value="none" version="1.0"/>
+            </propertymap>
+            <nestedpropertystore/>
+        </propertystore>
+        <propertystore id="datasource" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="ic" version="1.0">
+                    <propertymap>
+                        <property name="enabled" value="false" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="ic_vrusm" version="1.0">
+                    <propertymap>
+                        <property name="enabled" value="false" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="runtimecommon" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="scert" version="1.0">
+                    <propertymap>
+                        <property name="version" value="07.23.08.01" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="runtime" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="scert" version="1.0">
+                    <propertymap>
+                        <property name="version" value="07.23.08.01" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="tomcat" version="1.0">
+                    <propertymap>
+                        <property name="version" value="tomcatv9" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="prompts" version="1.0">
+            <propertymap>
+                <property name="timeout_presentation" value="constant" version="1.0"/>
+                <property name="timeout_constant_number" value="8" version="1.0"/>
+                <property name="timeout_constant_unit" value="0" version="1.0"/>
+            </propertymap>
+            <nestedpropertystore/>
+        </propertystore>
+    </nestedpropertystore>
+</propertystore>

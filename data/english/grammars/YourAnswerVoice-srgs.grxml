@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="YourAnswerVoice" tag-format="semantics/1.0-literals" version="1.0" xml:lang="en-us">
+    <rule id="YourAnswerVoice" scope="public">
+        <ruleref uri="#Column1"/>
+    </rule>
+    <rule id="Column1" scope="private">
+        <one-of>
+            <item>owe<tag>0</tag>
+            </item>
+            <item>zero<tag>0</tag>
+            </item>
+            <item>one<tag>1</tag>
+            </item>
+            <item>two<tag>2</tag>
+            </item>
+            <item>three<tag>3</tag>
+            </item>
+            <item>four<tag>4</tag>
+            </item>
+            <item>five<tag>5</tag>
+            </item>
+            <item>six<tag>6</tag>
+            </item>
+            <item>seven<tag>7</tag>
+            </item>
+            <item>eight<tag>8</tag>
+            </item>
+            <item>nine<tag>9</tag>
+            </item>
+            <item>ten<tag>10</tag>
+            </item>
+            <item>eleven<tag>11</tag>
+            </item>
+            <item>twelve<tag>12</tag>
+            </item>
+            <item>thirteen<tag>13</tag>
+            </item>
+            <item>fourteen<tag>14</tag>
+            </item>
+            <item>fifteen<tag>15</tag>
+            </item>
+            <item>sixteen<tag>16</tag>
+            </item>
+            <item>seventeen<tag>17</tag>
+            </item>
+            <item>eighteen<tag>18</tag>
+            </item>
+            <item>nineteen<tag>19</tag>
+            </item>
+            <item>twenty<tag>20</tag>
+            </item>
+            <item>twentyone<tag>21</tag>
+            </item>
+            <item>twentytwo<tag>22</tag>
+            </item>
+            <item>twentythree<tag>23</tag>
+            </item>
+            <item>twentyfour<tag>24</tag>
+            </item>
+            <item>twentyfive<tag>25</tag>
+            </item>
+            <item>twentysix<tag>26</tag>
+            </item>
+            <item>twentyseven<tag>27</tag>
+            </item>
+            <item>twentyeight<tag>28</tag>
+            </item>
+            <item>twentynine<tag>29</tag>
+            </item>
+            <item>thirty<tag>30</tag>
+            </item>
+            <item>thirtyone<tag>31</tag>
+            </item>
+            <item>thirty two<tag>32</tag>
+            </item>
+            <item>thritythree<tag>33</tag>
+            </item>
+            <item>thirtyfour<tag>34</tag>
+            </item>
+            <item>thirtyfive<tag>35</tag>
+            </item>
+            <item>thirtysix<tag>36</tag>
+            </item>
+            <item>thirtyseven<tag>37</tag>
+            </item>
+            <item>thirtyeight<tag>38</tag>
+            </item>
+            <item>thirtynine<tag>39</tag>
+            </item>
+            <item>fourty<tag>40</tag>
+            </item>
+            <item>fourtyone<tag>41</tag>
+            </item>
+            <item>fourtytwo<tag>42</tag>
+            </item>
+            <item>fourtythree<tag>43</tag>
+            </item>
+            <item>fourtyfour<tag>44</tag>
+            </item>
+            <item>fourtyfive<tag>45</tag>
+            </item>
+            <item>fourtysix<tag>46</tag>
+            </item>
+            <item>fourtyseven<tag>47</tag>
+            </item>
+            <item>fourtyeight<tag>48</tag>
+            </item>
+            <item>fourtynine<tag>49</tag>
+            </item>
+            <item>fifty<tag>50</tag>
+            </item>
+            <item>fifty one<tag>51</tag>
+            </item>
+            <item>fifty two<tag>52</tag>
+            </item>
+            <item>fifty three<tag>53</tag>
+            </item>
+            <item>fifty four<tag>54</tag>
+            </item>
+            <item>fifty five<tag>55</tag>
+            </item>
+            <item>fifty six<tag>56</tag>
+            </item>
+            <item>fifty seven<tag>57</tag>
+            </item>
+            <item>fifty eight<tag>58</tag>
+            </item>
+            <item>fifty nine<tag>59</tag>
+            </item>
+            <item>sixty<tag>60</tag>
+            </item>
+            <item>sixty one<tag>61</tag>
+            </item>
+            <item>sixty two<tag>62</tag>
+            </item>
+            <item>sixty three<tag>63</tag>
+            </item>
+            <item>sixty four<tag>64</tag>
+            </item>
+            <item>sixty five<tag>65</tag>
+            </item>
+            <item>sixty six<tag>66</tag>
+            </item>
+            <item>sixty seven<tag>67</tag>
+            </item>
+            <item>sixty eight<tag>68</tag>
+            </item>
+            <item>sixty nine<tag>69</tag>
+            </item>
+            <item>seventy<tag>70</tag>
+            </item>
+            <item>seventy one<tag>71</tag>
+            </item>
+            <item>seventy two<tag>72</tag>
+            </item>
+            <item>seventy three<tag>73</tag>
+            </item>
+            <item>seventy four<tag>74</tag>
+            </item>
+            <item>seventy five<tag>75</tag>
+            </item>
+            <item>seventy six<tag>76</tag>
+            </item>
+            <item>seventy seven<tag>77</tag>
+            </item>
+            <item>seventy eight<tag>78</tag>
+            </item>
+            <item>seventy nine<tag>79</tag>
+            </item>
+            <item>eighty<tag>80</tag>
+            </item>
+            <item>eight one<tag>81</tag>
+            </item>
+            <item>eight two<tag>82</tag>
+            </item>
+            <item>eight three<tag>83</tag>
+            </item>
+            <item>eight four<tag>84</tag>
+            </item>
+            <item>eight five<tag>85</tag>
+            </item>
+            <item>eight six<tag>86</tag>
+            </item>
+            <item>eight seven<tag>87</tag>
+            </item>
+            <item>eighty eight<tag>88</tag>
+            </item>
+            <item>eight nine<tag>89</tag>
+            </item>
+            <item>ninety<tag>90</tag>
+            </item>
+            <item>ninety one<tag>91</tag>
+            </item>
+            <item>ninety two<tag>92</tag>
+            </item>
+            <item>ninety three<tag>93</tag>
+            </item>
+            <item>ninety four<tag>94</tag>
+            </item>
+            <item>ninety five<tag>95</tag>
+            </item>
+            <item>ninety six<tag>96</tag>
+            </item>
+            <item>ninety seven<tag>97</tag>
+            </item>
+            <item>ninety eight<tag>98</tag>
+            </item>
+            <item>ninety nine<tag>99</tag>
+            </item>
+            <item>one hundred<tag>100</tag>
+            </item>
+            <item>uh hundred<tag>100</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="voice" root="QuizChoices" tag-format="semantics/1.0-literals" version="1.0" xml:lang="en-us">
+    <rule id="QuizChoices" scope="public">
+        <ruleref uri="#Column1"/>
+    </rule>
+    <rule id="Column1" scope="private">
+        <one-of>
+            <item>addition<tag>addition</tag>
+            </item>
+            <item>subtraction<tag>subtraction</tag>
+            </item>
+            <item>multiplication<tag>multiplication</tag>
+            </item>
+            <item>division<tag>division</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>
