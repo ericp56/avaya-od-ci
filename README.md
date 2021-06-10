@@ -30,6 +30,8 @@ This will perform like a typical maven war package goal, but it will also deploy
 
 - See SimpleIntegrationTest.java for the sample testing of the deployed app.
 
+I added in #comment lines below, noting points of interest.
+
 ``` bash
 # Here's the maven command
 [ericp@local avaya-od-ci]$ mvn clean verify package
